@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!--
+Template Name: Midone - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+<!-- BEGIN: Head -->
+
+<head>
+    <meta charset="utf-8">
+    <link href="dist/images/logo.svg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Midone admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="LEFT4CODE">
+    <title>Dashboard - Pop Example</title>
+    <!-- BEGIN: CSS Assets-->
+    <link rel="stylesheet" href="dist/css/app.css" />
+    <!-- END: CSS Assets-->
+</head>
+<!-- END: Head -->
+
+<body class="app">
+    <!-- BEGIN: Mobile Menu -->
+    <div class="mobile-menu md:hidden">
+        <div class="mobile-menu-bar">
+            <a href="" class="flex mr-auto">
+                <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+            </a>
+            <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2"
+                    class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+        </div>
+        <ul class="border-t border-theme-24 py-5 hidden">
+            <li>
+                <a href="index.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="home"></i> </div>
+                    <div class="menu__title"> Dashboard </div>
+                </a>
+            </li>
+            <!-- <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="box"></i> </div>
+                        <div class="menu__title"> Menu Layout <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="index.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> Side Menu </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dashboard.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> Simple Menu </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="top-menu-dashboard.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> Top Menu </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li> -->
+            <li>
+                <a href="side-menu-inbox.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                    <div class="menu__title"> Websites </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-file-manager.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                    <div class="menu__title"> File Manager </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-point-of-sale.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="credit-card"></i> </div>
+                    <div class="menu__title"> Billing </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-chat.html" class="menu menu--active">
+                    <div class="menu__icon"> <i data-feather="message-square"></i> </div>
+                    <div class="menu__title"> Referrals </div>
+                </a>
+            </li>
+            <li>
+                <a href="side-menu-post.html" class="menu">
+                    <div class="menu__icon"> <i data-feather="file-text"></i> </div>
+                    <div class="menu__title"> Post </div>
+                </a>
+            </li>
+            <li class="menu__devider my-6"></li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="edit"></i> </div>
+                    <div class="menu__title"> Crud <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-crud-data-list.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Data List </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-crud-form.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Form </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="users"></i> </div>
+                    <div class="menu__title"> Users <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-users-layout-1.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Layout 1 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-users-layout-2.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Layout 2 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-users-layout-3.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Layout 3 </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="trello"></i> </div>
+                    <div class="menu__title"> Profile <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-profile-overview-1.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Overview 1 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-profile-overview-2.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Overview 2 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-profile-overview-3.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Overview 3 </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="layout"></i> </div>
+                    <div class="menu__title"> Pages <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Wizards <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-wizard-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-wizard-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-wizard-layout-3.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 3</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Blog <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-blog-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-blog-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-blog-layout-3.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 3</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Pricing <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-pricing-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-pricing-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Invoice <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-invoice-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-invoice-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> FAQ <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-faq-layout-1.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-faq-layout-2.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 2</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-faq-layout-3.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Layout 3</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login-login.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Login </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login-register.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Register </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="main-error-page.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Error Page </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-update-profile.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Update profile </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-change-password.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Change Password </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__devider my-6"></li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                    <div class="menu__title"> Components <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                    </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Grid <i data-feather="chevron-down" class="menu__sub-icon"></i>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="side-menu-regular-table.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Regular Table</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="side-menu-datatable.html" class="menu">
+                                    <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                    <div class="menu__title">Datatable</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="side-menu-accordion.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Accordion </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-button.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Button </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-modal.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Modal </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-alert.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Alert </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-progress-bar.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Progress Bar </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-tooltip.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Tooltip </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-dropdown.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Dropdown </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-toast.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Toast </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-typography.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Typography </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-icon.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Icon </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-loading-icon.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Loading Icon </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="sidebar"></i> </div>
+                    <div class="menu__title"> Forms <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-regular-form.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Regular Form </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-datepicker.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Datepicker </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-select2.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Select2 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-file-upload.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> File Upload </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-wysiwyg-editor.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Wysiwyg Editor </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-validation.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Validation </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" class="menu">
+                    <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                    <div class="menu__title"> Widgets <i data-feather="chevron-down" class="menu__sub-icon"></i> </div>
+                </a>
+                <ul class="">
+                    <li>
+                        <a href="side-menu-chart.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Chart </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-slider.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Slider </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="side-menu-image-zoom.html" class="menu">
+                            <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                            <div class="menu__title"> Image Zoom </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- END: Mobile Menu -->
+    <div class="flex">
+        <!-- BEGIN: Side Menu -->
+        <nav class="side-nav">
+            <a href="" class="intro-x flex items-center pl-5 pt-4">
+                <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                <span class="hidden xl:block text-white text-lg ml-3"> Pop<span class="font-medium">Example</span>
+                </span>
+            </a>
+            <div class="side-nav__devider my-6"></div>
+            <ul>
+                <li>
+                    <a href="index.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="side-menu__title"> Dashboard </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="side-menu-inbox.html" class="side-menu ">
+                        <div class="side-menu__icon"> <i data-feather="globe"></i> </div>
+                        <div class="side-menu__title"> Webistes </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-code-generator.html" class="side-menu ">
+                        <div class="side-menu__icon"> <i data-feather="code"></i> </div>
+                        <div class="side-menu__title"> Code Generator </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-point-of-sale.html" class="side-menu ">
+                        <div class="side-menu__icon"> <i data-feather="credit-card"></i> </div>
+                        <div class="side-menu__title"> Billing </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-chat.html" class="side-menu side-menu--active">
+                        <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                        <div class="side-menu__title"> Referrals </div>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="side-menu-post.html" class="side-menu">
+                        <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
+                        <div class="side-menu__title"> Post </div>
+                    </a>
+                </li> -->
+                <li class="side-nav__devider my-6"></li>
+               
+            </ul>
+        </nav>
+        <!-- END: Side Menu -->
+        <!-- BEGIN: Content -->
+        <div class="content">
+            <!-- BEGIN: Top Bar -->
+            <div class="top-bar">
+                <!-- BEGIN: Breadcrumb -->
+                <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> <a href="" class="">Application</a> <i
+                        data-feather="chevron-right" class="breadcrumb__icon"></i> <a href=""
+                        class="breadcrumb--active">Dashboard</a> </div>
+                <!-- END: Breadcrumb -->
+             
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8 relative">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in">
+                        <img alt="Midone Tailwind HTML Admin Template" src="dist/images/profile-1.jpg">
+                    </div>
+                    <div class="dropdown-box mt-10 absolute w-56 top-0 right-0 z-20">
+                        <div class="dropdown-box__content box bg-theme-38 dark:bg-dark-6 text-white">
+                            <div class="p-4 border-b border-theme-40 dark:border-dark-3">
+                                <div class="font-medium">Denzel Washington</div>
+                                <div class="text-xs text-theme-41 dark:text-gray-600">Backend Engineer</div>
+                            </div>
+                            <div class="p-2">
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                    <i data-feather="user" class="w-4 h-4 mr-2"></i> Profile </a>
+                                <!-- <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                    <i data-feather="edit" class="w-4 h-4 mr-2"></i> Add Account </a>
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                    <i data-feather="lock" class="w-4 h-4 mr-2"></i> Reset Password </a>
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                    <i data-feather="help-circle" class="w-4 h-4 mr-2"></i> Help </a> -->
+                            </div>
+                            <div class="p-2 border-t border-theme-40 dark:border-dark-3">
+                                <a href=""
+                                    class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md">
+                                    <i data-feather="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+            <!-- END: Top Bar -->
+            <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
+                <h2 class="text-lg font-medium mr-auto">
+                    Referral System
+                </h2>
+
+            </div>
+            <div class="intro-y flex grid grid-cols-12 sm:flex-row items-center mt-8 ">
+                <div class="text-lg font-small mr-10 col-span-6 py-10 px-10 bg-white">
+                    Promote PopCash.net and win money. You will get <b>10% lifetime </b> revshare from your referred
+                    members
+                    earnings.
+                    Active Referrals are all the refferals that send at last 1 visit to our system.
+                </div>
+
+                <div class="intro-y col-span-6 py-4 px-4 bg-white">
+                    <h2 class="text-lg font-medium mr-auto ml-5 mt-5">
+                        Referral link
+                    </h2>
+                    <div class="col-span-4 flex">
+
+                        <input type="text"
+                            class="input placeholder-theme-13 py-5 px-5 ml-5 mt-5 bg-gray-200 outline-none font-medium intro-y w-full flex cursor-not-allowed"
+                            value="www.pop-expample.com/register/ref?=78626" readonly id="ref_link">
+                        <button class="button bg-gray-200 h-16 w-20 flex items-center mt-5 ml-5" onclick="copyText()">
+                            <i data-feather="clipboard" class="w-5 h-5 mr-2"></i> Copy
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="intro-y grid grid-cols-12 mt-5">
+                <!-- BEGIN: Chat Side Menu -->
+
+                <!-- END: Chat Side Menu -->
+                <!-- BEGIN: Chat Content -->
+                <div class="intro-y col-span-12 lg:col-span-8 xxl:col-span-8 bg-white mr-10">
+
+                    <!-- <div class="col-span-12 py-5 flex">
+                        
+                    </div>
+                     -->
+
+                    <div class="col-span-12 mt-8 mb-16 ">
+                        <h2 class="text-lg col-span-12 w-full font-medium ml-5 mt-16 border-yellow-200  py-5 px-5 block">
+                            Referral Stats
+                        </h2>
+
+                        <div class="grid grid-cols-12 gap-6 mt-10 mr-5 ml-10">
+                            <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y">
+                                <div class="report-box zoom-in">
+                                    <div class="box p-5">
+                                        <div class="flex">
+                                            <i data-feather="layers" class="report-box__icon text-theme-11"></i>
+
+
+                                        </div>
+                                        <div class="text-3xl font-bold leading-8 mt-6">4.510</div>
+                                        <div class="text-base text-gray-600 mt-1">Total Referrals</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y">
+                                <div class="report-box zoom-in">
+                                    <div class="box p-5">
+                                        <div class="flex">
+                                            <i data-feather="monitor" class="report-box__icon text-theme-10"></i>
+
+                                        </div>
+                                        <div class="text-3xl font-bold leading-8 mt-6">3.521</div>
+                                        <div class="text-base text-gray-600 mt-1">Active Referrals</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-6 xl:col-span-4 intro-y">
+                                <div class="report-box zoom-in">
+                                    <div class="box p-5">
+                                        <div class="flex">
+                                            <i data-feather="dollar-sign" class="report-box__icon text-theme-12"></i>
+
+                                        </div>
+                                        <div class="text-3xl font-bold leading-8 mt-6">2.145</div>
+                                        <div class="text-base text-gray-600 mt-1">Revenue Referrals</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="intro-y col-span-8 lg:col-span-12 bg-white mt-20">
+                        <img src="dist/images/728 X 90-8.png" alt="" class="image mt-10 pl-40 mb-20">
+                        <pre
+                            class="font-small w-full py-5 px-4"><code class="" data-language="markup"><span class=""><span class=""><span class="">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="https://popexample.com/home/280646">https://popexample.com/home/280646</a><span class="">"</span></span> <span class="token attr-name"
+>target</span><span class="token attr-value"><span class="">=</span><span class="">"</span>_blank<span class="">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash - The Popunder network<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class="">
+<span class="">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="dist/images/728 X 90-8.png">dist/images/728 X 90-8.png</a><span class="">"</span></span> <span class="token attr-name">
+alt</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash.net<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class=""><span class="">&lt;/</span>a</span><span class="">&gt;</span></span></code></pre>
+
+                        <button class="button bg-gray-200 h-16 w-50 flex items-center mt-5 ml-auto mr-auto" onclick="copyText()">
+                            <i data-feather="clipboard" class="w-5 h-5 mr-2"></i> Copy Code
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="intro-y col-span-12 lg:col-span-4 xxl:col-span-4 bg-white mr-10">
+                    <img src="dist/images/160 X 600-8.png" alt="" class="image mt-5 pl-40">
+
+                    <pre
+                        class="font-small w-full py-5 px-4"><code class="" data-language="markup"><span class=""><span class=""><span class="">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="https://popexample.com/home/280646">https://popexample.com/home/280646</a><span class="">"</span></span> <span class="token attr-name"
+>target</span><span class="token attr-value"><span class="">=</span><span class="">"</span>_blank<span class="">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash - The Popunder network<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class="">
+<span class="">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="dist/images/160 X 600-8.png">dist/images/160 X 600-8.png</a><span class="">"</span></span> <span class="token attr-name">
+alt</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash.net<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class=""><span class="">&lt;/</span>a</span><span class="">&gt;</span></span></code></pre>
+
+                    <button class="button bg-gray-200 h-16 w-50 flex items-center mt-5 ml-auto mr-auto mb-10" onclick="copyText()">
+                        <i data-feather="clipboard" class="w-5 h-5 mr-2"></i> Copy Code
+                    </button>
+    
+                </div>
+                <!-- END: Chat Content -->
+            </div>
+                        <div class="grid grid-cols-12 intro-y mt-5">
+                            <div class="col-span-4 bg-white mr-10">
+                                <img src="dist/images/300 X 250-8.png" alt="" class="image mt-5 mr-auto ml-auto">
+
+<pre
+class="font-small w-full py-5 px-4"><code class="" data-language="markup"><span class=""><span class=""><span class="">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="https://popexample.com/home/280646">https://popexample.com/home/280646</a><span class="">"</span></span> <span class="token attr-name"
+>target</span><span class="token attr-value"><span class="">=</span><span class="">"</span>_blank<span class="">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash - The Popunder network<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class="">
+<span class="">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="dist/images/300 X 250-8.png">dist/images/300 X 250-8.png</a><span class="">"</span></span> <span class="token attr-name">
+alt</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash.net<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class=""><span class="">&lt;/</span>a</span><span class="">&gt;</span></span></code></pre>
+            
+                                <button class="button bg-gray-200 h-16 w-50 flex items-center mt-5 ml-auto mr-auto mb-10" onclick="copyText()">
+                                    <i data-feather="clipboard" class="w-5 h-5 mr-2"></i> Copy Code
+                                </button>
+                            </div>
+                            <div class="col-span-8 bg-white mr-10">
+                                <img src="dist/images/468 X 60-8.png" alt="" class="image mt-40 mr-auto ml-auto">
+
+<pre
+class="font-small w-full py-5 px-4"><code class="" data-language="markup"><span class=""><span class=""><span class="">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href="https://popexample.com/home/280646">https://popexample.com/home/280646</a><span class="">"</span></span> <span class="token attr-name"
+>target</span><span class="token attr-value"><span class="">=</span><span class="">"</span>_blank<span class="">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash - The Popunder network<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class="">
+<span class="">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="">=</span><span class="">"</span><a class="token url-link" href=dist/images/468 X 60-8.png">dist/images/468 X 60-8.png</a><span class="">"</span></span> <span class="token attr-name">
+alt</span><span class="token attr-value"><span class="">=</span><span class="">"</span>PopCash.net<span class="">"</span></span><span class="">&gt;</span></span><span class=""><span class=""><span class="">&lt;/</span>a</span><span class="">&gt;</span></span></code></pre>
+                                            
+                                                                <button class="button bg-gray-200 h-16 w-50 flex items-center mt-5 ml-auto mr-auto mb-10" onclick="copyText()">
+                                                                    <i data-feather="clipboard" class="w-5 h-5 mr-2"></i> Copy Code
+                                                                </button>
+                            </div>
+                        </div>
+        </div>
+        <!-- END: Content -->
+    </div>
+    <!-- BEGIN: Dark Mode Switcher-->
+    <div
+        class="dark-mode-switcher shadow-md fixed bottom-0 right-0 box dark:bg-dark-2 border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
+        <div class="mr-4 text-gray-700 dark:text-gray-300">Dark Mode</div>
+        <input class="input input--switch border" type="checkbox" value="1">
+    </div>
+    <!-- END: Dark Mode Switcher-->
+    <!-- BEGIN: JS Assets-->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=[" your-google-map-api"]&libraries=places"></script>
+    <script src="dist/js/app.js"></script>
+    <!-- END: JS Assets-->
+    <script>
+        function copyText() {
+            let refValue = document.getElementById("ref_link").value
+            console.log(refValue);
+            refValue.select();
+            refValue.setSelectionRange(0, 99999);
+            try {
+                document.execCommand("copy")
+                alert("Copied")
+            } catch (error) {
+
+                alert("Copied Fail")
+            }
+        }
+    </script>
+
+</body>
+
+</html>
